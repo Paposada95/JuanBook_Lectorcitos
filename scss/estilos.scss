@@ -31,7 +31,6 @@ $colors: (
     margin-top: 176px;
     padding-bottom: 480px;
 }
-
 @mixin estefaniaMorales ($color: #3797a4){
     background-color: $color;
     width: 50%;
@@ -64,7 +63,6 @@ $colors: (
         }
     }
 }
-
 @mixin alejandraPosada ($color: #3797a4){
     background-color: $color;
     width: 50%;
@@ -98,6 +96,7 @@ $colors: (
         
     }
 }
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @each $name, $color in $colors {
@@ -461,62 +460,61 @@ section {
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .container {
+    .container{
         width: 100%;
     }
-    .logo{
-        width: 100%;
-        padding: 0px;
+    header{
+        img.logo{
+            width: 100%;
+            padding: 0px;
+        }
+        .navbar{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .navbar-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        button.navbar-toggler {
+            padding: 0.25rem 0.75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: white;
+            border-radius: 0.25rem;
+        }
+        a.nav-link{
+            font-size: 8px;
+            padding: 3px;
+            margin-top: 14px;
+        }
     }
-    .navbar{
-        display: flex;
-        flex-wrap: nowrap;
+    div.element-style{
+        img.booky{
+            max-width: 450px;
+            float: none;
+        }
+        h1{
+            font-size: 2rem;
+            text-align: center;
+        }
+        p{
+            font-size: 10px;
+        }
     }
-    .navbar-nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    button.navbar-toggler {
-        padding: 0.25rem 0.75rem;
-        font-size: 1.25rem;
-        line-height: 1;
-        background-color: transparent;
-        border: 1px solid transparent;
-        color: white;
-        border-radius: 0.25rem;
-    }
-    a.nav-link{
-        font-size: 8px;
-        padding: 3px;
-        margin-top: 14px;
-    }
-    p{
-        font-size: 10px;
-    }
-    h1.principal{
-        font-size: 2rem;
-        text-align: center;
-    }
-    div.element-style > img{
-        width: 422px;
-        float: none;
-    }
-    .second{
+    section.second{
         padding: 12px;
-    }
-    h2.suscribe{
-        font-size: 30px;
-    }
-    .formulario{
-        width: 250px;
-    }
-    button{
-        width: 80px;
-        padding: 10px;
+        h2{
+            font-size: 30px
+        }
+        .form{
+            width: 250px;
+        }
     }
 }
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
     .container {

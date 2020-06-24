@@ -7519,6 +7519,9 @@ body {
   font-family: nunito;
   background-color: #DAE1E7; }
 
+button i {
+  color: white; }
+
 header div.wrapper {
   display: flex;
   justify-content: space-between;
@@ -7619,6 +7622,7 @@ footer {
   font-family: nunito;
   text-align: center;
   margin: 0px;
+  padding: 6px;
   background-color: #142850; }
   footer p {
     color: white;
@@ -7775,3 +7779,90 @@ section div.article-layout {
         margin: auto;
         padding: 20px; }
 
+@media (max-width: 575.98px) {
+  .container {
+    display: none; }
+  body {
+    display: none; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 100%; }
+  .logo {
+    width: 100%;
+    padding: 0px; }
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap; }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+  button.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 0.25rem; }
+  a.nav-link {
+    font-size: 8px;
+    padding: 3px;
+    margin-top: 14px; }
+  p {
+    font-size: 10px; }
+  h1.principal {
+    font-size: 2rem;
+    text-align: center; }
+  img.booky {
+    width: 350px;
+    float: none; }
+  .second {
+    padding: 12px; }
+  h2.suscribe {
+    font-size: 30px; }
+  .formulario {
+    width: 250px; }
+  button {
+    width: 80px;
+    padding: 10px; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    max-width: 100%; }
+  a.nav-link {
+    font-size: 12px;
+    padding: 8px; }
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap; }
+  button.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 0.25rem; }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+  p {
+    font-size: 1rem; }
+  h1.principal {
+    font-size: 3rem;
+    text-align: left; }
+  div.element-style > img {
+    width: 264px;
+    float: right; }
+  .second {
+    padding: 12px; }
+  h2.suscribe {
+    font-size: 29px !important; }
+  .formulario {
+    width: 250px; }
+  button {
+    width: 80px;
+    padding: 10px; } }
