@@ -1,0 +1,464 @@
+*{box-sizing: border-box;}
+$ownner:#f3c623;
+
+$colors: (
+    blue: #142850,
+    heaven: #00909e,
+    body: #DAE1E7,
+    aqua: #8EC6C5,
+    toas:#32e0c4
+);
+.container{
+    width: 1100px;
+}
+@mixin followUs {
+    margin: 6px;
+    width: 62px;
+}
+@mixin backgroundBody ($color:#DAE1E7) {  
+    background-color: $color;
+
+}
+@mixin backgroundFooterYHeader ($color: #142850) {   
+    background-color: $color;
+
+}
+@mixin backgroundSection($color:#00909e) {
+    background-color: $color;
+}
+@mixin backgroundCreadores($color:#8EC6C5) {
+    background-color: $color;
+    margin-top: 176px;
+    padding-bottom: 480px;
+}
+
+@mixin estefaniaMorales ($color: #3797a4){
+    background-color: $color;
+    width: 50%;
+    float:left;
+
+    h6{
+        display: inline-block;
+        font-family: nunito;
+        font-style: bolder;
+        font-size: 2rem;
+        margin: 13px;
+        color: $ownner;
+    }
+    p{
+        color: white;
+    }
+    img{
+        width: 284px;
+        margin: 16px;
+        float: left;
+        border-radius: 20%;
+    }
+    h3{
+        color: $ownner;
+        padding-left: 20px;
+    }
+    nav.follow{
+        img{
+            @include followUs()
+        }
+    }
+}
+
+@mixin alejandraPosada ($color: #3797a4){
+    background-color: $color;
+    width: 50%;
+    float:right;
+
+    h6{
+        display: inline-block;
+        font-family: nunito;
+        font-style: bolder;
+        font-size: 2rem;
+        margin: 13px;
+        color: $ownner;
+    }
+    p{
+        color: white;
+    }
+    img{
+        width: 284px;
+        margin: 16px;
+        float: left;
+        border-radius: 20%;
+    }
+    h3{
+        color: $ownner;
+        padding-left: 20px;
+    }
+    nav.follow{
+        img{
+            @include followUs()
+        }
+        
+    }
+}
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@each $name, $color in $colors {
+    .btn-#{$name} {
+        background-color: $color;
+        text-transform: uppercase;
+        border: none;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 10px 12px;
+        cursor: pointer;
+        font-family: montserrat;
+        font-size: 14px;
+        font-weight: bolder;
+        transition: 250ms ease;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: lighten($color, 20%);
+            animation-play-state: paused;
+            color: black;
+        }
+
+        @if $name=="blue" {
+            border: none;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 10px auto;
+            cursor: pointer;
+            color: white;
+            font-family: montserrat;
+            font-size: 14px;
+            font-weight: bolder;
+            transition: 250ms ease;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: #8EC6C5;
+                color: #fff;
+                animation-play-state: paused;
+            }
+        }
+
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0 15px 15px 15px;
+    color: #0C0E11;
+    font-size: 16px;
+    font-family: nunito;
+    @include backgroundBody;
+}
+//index
+header {
+    div.wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @include backgroundFooterYHeader();
+
+        nav {
+            display: flex;
+            color: white;
+            width: 100%;
+
+            a {
+                img.logo {
+                    max-width: 300px;
+
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            align-content: flex-end;
+            flex: 1;
+
+            li {
+                display: inline;
+                text-align: center;
+                margin: 0 10px 0 0;
+            }
+
+            a {
+                color: white;
+                font-size: 1rem;
+                justify-content: space-between;
+
+            }
+        }
+        
+        div.dropdown-menu {
+            a {
+                color: black;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+}
+div.element-style {
+    display: inline;
+
+    img.booky {
+        width: 576px;
+        height: auto;
+        object-fit: cover;
+        float: right;
+    }
+
+    h1.main {
+        font-family: nunito;
+        font-size: 4.2rem;
+        color: #00909E;
+        padding: 15px;
+        margin-top: 28px;
+        line-height: 4.5rem;
+
+        strong {
+            color: #142850;
+            margin-bottom: 8px;
+            margin-top: 0;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+section.second {
+    display: flex;
+    padding: 0px 14px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    @include backgroundSection();
+
+    div.form {
+        color: white;
+        margin: 0 auto;
+        width: 400px;
+        text-align: center;
+        font-family: nunito;
+        font-size: 35px;
+        text-align: center;
+
+        h2 {
+            font-family: nunito;
+            font-size: 54px;
+            color: #142850;
+            margin: 5px;
+            
+        }
+
+        form.index {
+            display: flex;
+            font-family: montserrat;
+            font-size: 18px;
+            font-weight: lighter;
+            color: white;
+            margin: 0;
+            padding: 0;
+
+            input#email {
+                font-family: montserrat;
+                font-size: 12px;
+                font-weight: lighter;
+                color: white;
+                margin-bottom: 1rem;
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid #142850;
+
+                &::placeholder {
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}
+footer {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-family: nunito;
+    text-align: center;
+    margin: 0px;
+    @include backgroundFooterYHeader();
+
+    p {
+        color: white;
+        font-size: 1rem;
+        font-family: nunito;
+        text-align: center;
+        margin: 0px;
+    }
+
+    ul {
+        display: inline;
+        list-style-type: none;
+        text-align: center;
+        li {
+            display: inline;
+            text-align: center;
+            margin: 0 10px 0 0;
+            a {
+                img {
+                    max-width: 54px;
+                }
+            }
+        }
+    }
+}
+h1.main {
+    font-family: nunito;
+    font-size: 4.2rem;
+    color: #00909E;
+    padding: 15px;
+    margin-top: 28px;
+    line-height: 4.5rem;
+    text-align: center;
+}
+section.contacts {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 20%;
+    margin: 1rem 20rem 2rem 20rem;
+    @include backgroundSection();
+
+    form {
+        font-family: nunito;
+        font-size: 20px;
+        font-weight: bolder;
+        margin: 15px 12px;
+        width: 400px;
+        color:#142850;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+
+        input.contact {
+            width: 100%;
+            padding: 15px 0px;
+            font-family: montserrat;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid #142850;
+            
+            &::placeholder {
+                color: rgb(255, 255, 255);
+            }
+
+        div.comments{
+            textarea {
+                width: 417px;
+                height: 59px;
+                border-radius: 2%;
+                @include backgroundFooterYHeader()
+            }
+        }
+    }
+}
+
+    select {
+        font-family: montserrat;
+    }
+
+    div#condition {
+        width: 14px;
+    }
+}
+//Quienes Somos
+main{
+    div{
+        img.lector{
+            width: 576px;
+            height: auto;
+            object-fit: cover;
+            float: left;
+        }
+    }
+    div.lector{
+        p{
+            font-size: 23px;
+            text-align:justify;
+        }
+    }
+}
+section.creadores{
+    @include backgroundCreadores();
+        h2{
+            font-family: nunito;
+            font-weight: bolder;
+            font-size: 3.5rem;
+            margin: 32px;
+            color: #00909E;
+        }
+    div.estefania{
+        @include estefaniaMorales();
+    }
+    div.alejandra{
+        @include alejandraPosada()
+    }
+
+}
+//galería
+section {
+    div.article-layout {
+        display: grid;
+        grid-template-columns: minmax(400px, auto) 1fr 1fr;
+        grid-auto-rows: auto;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        grid-gap: 10px;
+        justify-items: center;
+        padding: 20px;
+
+        div.box {
+            transition: 1s;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: #00909e;
+                border-radius: 30px;
+            }
+
+            div.img-wrapper {
+                display: grid;
+
+                img {
+                    height: auto;
+                    width: 285px;
+                    overflow: hidden;
+                    margin: auto;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+//libros
+/*section.libros {
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px;
+
+        div.card {
+            display: flex;
+            width: 580px;
+            height: auto;
+        }
+    }
+}*/

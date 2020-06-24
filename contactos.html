@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JuanBook Lectorcitos</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#041c50">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@200;400;700&display=swap"rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+	<header>
+		<div class="wrapper">
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand" href="#"><img class="logo animate__animated animate__zoomIn"
+						src="imagenes/logo-blanco.png" alt="logo de la editorial"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<i class="mdi mdi-menu"></i>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link btn-heaven" href="index.html">Inicio <span
+									class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-toas" href="quienesSomos.html">Quienes Somos</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle btn-heaven" href="libros.html" id="navbarDropdown"
+								role="button" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="false">Libros</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Amber</a>
+								<a class="dropdown-item" href="#">Ronnie y Annie</a>
+								<a class="dropdown-item" href="#">Marie</a>
+								<a class="dropdown-item" href="#">Juan el dragón</a>
+								<a class="dropdown-item" href="#">El vuelo de Marii</a>
+								<a class="dropdown-item" href="#">Tengo celos</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-toas" href="galeria.html">Galería</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn-heaven" href="contactos.html">Contactos</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<h1 class="main">Contactos</h1>
+	<section class="contacts animate__animated animate__zoomIn">
+		<form action="#" method="GET">
+			<div>
+				<label for="name">Nombre</label>
+				<input class="contact" id="name" required placeholder="Escriba su nombre aquí" type="text">
+			</div>
+			<br>
+			<div>
+				<label for="last-name">Apellido</label>
+				<input class="contact" id="last-name" required placeholder="Escriba aqui su apellido " type="text">
+			</div>
+			<br>
+			<div>
+				<label for="email">Email</label>
+				<input class="contact" id="email" required placeholder="correoelectronico@ejemplo.com" type="email">
+			</div>
+			<br>
+			<div class="comments">
+				<label for="comments">Comentarios</label>
+				<textarea id="comments" placeholder="Escriba aquí sus comentarios"></textarea>
+			</div>
+			<br>
+			<div>
+				<label for="ages">Seleccione un rango de edad</label>
+				<select name="" id="Ages">
+					<option selected disabled>Seleccione Una de la lista</option>
+					<option>0 a 1 año</option>
+					<option>1 a 3</option>
+					<option>3 a 6</option>
+				</select>
+			</div>
+			<br>
+			<button class="btn-blue" type="submit">Enviar</button>
+			<button class="btn-blue" type="reset">Limpiar</button>
+			<div>
+				<input value="Si" type="checkbox" id="condiciones" name="acepto" required>
+				<label for="condiciones">Acepta Terminos & Condiciones</label>
+				<a href="#">Ver las condiciones acá</a>
+			</div>
+		</form>
+	</section>
+	<footer>
+        <p class="copy">&copy; Copyright 2020 | JuanBook Lectorcitos</p>
+        <ul class="redes">
+            <li>
+                <a href="https://t.co/uL8qKxpKB1?amp=1">
+                    <img class="facebook" src="imagenes/facebook.svg" alt="icono facebook"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/JuanBookLECTOR">
+                    <img class="twitter" src="imagenes/twitter.svg" alt="icono twitter"></a>
+            </li>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+</html>
