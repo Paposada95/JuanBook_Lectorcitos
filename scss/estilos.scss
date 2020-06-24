@@ -165,28 +165,16 @@ header {
         width: 100%;
         @include backgroundFooterYHeader();
         
-        button.navbar-toggler {
-            padding: 0.25rem 0.75rem;
-            font-size: 1.25rem;
-            line-height: 1;
-            background-color: transparent;
-            border: 1px solid transparent;
+        nav {
+            display: flex;
             color: white;
-            border-radius: 0.25rem;
-            nav {
-                display: flex;
-                color: white;
-                width: 100%;
-
-                a {
-                    img.logo {
-                        max-width: 300px;
-
-                    }
+            width: 100%;
+            a {
+                img.logo {
+                    max-width: 300px;
                 }
             }
         }
-
         ul {
             display: flex;
             justify-content: flex-end;
@@ -463,144 +451,70 @@ section {
     }
 }
 //Media Queries
-  @media (min-width:768px) and (max-width: 991px){
-    .container {
-      max-width: 100%;
-    }
-    a.nav-link{
-      font-size: 12px;
-      padding: 8px;
-    }
-    .navbar{
-      display: flex;
-      flex-wrap: nowrap;
-    }
-    .navbar-nav{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-    p{
-      font-size: 1rem;
-    }
-    h1.principal{
-      font-size: 3rem;
-      text-align: left;
-    }
-    div.element-style > img{
-      width: 264px;
-      float: right;   
-    }
-    .second{
-      padding: 12px;
-    }
-    h2.suscribe{
-      font-size: 29px !important;
-    }
-    .formulario{
-      width: 250px;
-    }
-    button{
-      width: 80px;
-      padding: 10px;
-    }
-  }
-  // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
-    .container {
-        width: 100%;
-      }
-      .logo{
-        width: 100%;
-        padding: 0px;
-      }
-      .navbar{
-        display: flex;
-        flex-wrap: nowrap;
-      }
-      .navbar-nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-      }
-      a.nav-link{
-        font-size: 8px;
-        padding: 3px;
-        margin-top: 14px;
-      }
-      p{
-        font-size: 10px;
-      }
-      h1.principal{
-        font-size: 2rem;
-        text-align: center;
-      }
-      div.element-style > img{
-        width: 422px;
-        float: none;
-      }
-      .second{
-        padding: 12px;
-      }
-      h2.suscribe{
-        font-size: 30px;
-      }
-      .formulario{
-        width: 250px;
-      }
-      button{
-        width: 80px;
-        padding: 10px;
-      }
- }
-
+    .container{
+        display: none;
+    }
+    body{
+        display: none;
+    }
+}
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
     .container {
         width: 100%;
-      }
-      .logo{
+    }
+    .logo{
         width: 100%;
         padding: 0px;
-      }
-      .navbar{
+    }
+    .navbar{
         display: flex;
         flex-wrap: nowrap;
-      }
-      .navbar-nav{
+    }
+    .navbar-nav{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-      }
-      a.nav-link{
+    }
+    button.navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: white;
+        border-radius: 0.25rem;
+    }
+    a.nav-link{
         font-size: 8px;
         padding: 3px;
         margin-top: 14px;
-      }
-      p{
+    }
+    p{
         font-size: 10px;
-      }
-      h1.principal{
+    }
+    h1.principal{
         font-size: 2rem;
         text-align: center;
-      }
-      div.element-style > img{
+    }
+    div.element-style > img{
         width: 422px;
         float: none;
-      }
-      .second{
+    }
+    .second{
         padding: 12px;
-      }
-      h2.suscribe{
+    }
+    h2.suscribe{
         font-size: 30px;
-      }
-      .formulario{
+    }
+    .formulario{
         width: 250px;
-      }
-      button{
+    }
+    button{
         width: 80px;
         padding: 10px;
-      }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -615,6 +529,15 @@ section {
     .navbar{
         display: flex;
         flex-wrap: nowrap;
+    }
+    button.navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: white;
+        border-radius: 0.25rem;
     }
     .navbar-nav{
         display: flex;
@@ -646,57 +569,3 @@ section {
         padding: 10px;
     }
 }
-    // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
-    .container {
-        width: 100%;
-    }
-    .logo{
-      width: 100%;
-      padding: 0px;
-    }
-    .navbar{
-      display: flex;
-      flex-wrap: nowrap;
-    }
-    .navbar-nav{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-    a.nav-link{
-      font-size: 8px;
-      padding: 3px;
-      margin-top: 14px;
-    }
-    p{
-      font-size: 10px;
-    }
-    h1.principal{
-      font-size: 2rem;
-      text-align: center;
-    }
-    div.element-style > img{
-      width: 422px;
-      float: none;
-    }
-    .second{
-      padding: 12px;
-    }
-    h2.suscribe{
-      font-size: 30px;
-    }
-    .formulario{
-      width: 250px;
-    }
-    button{
-      width: 80px;
-      padding: 10px;
-    }
-}
-
-/*/ Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
- Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }//*
-  

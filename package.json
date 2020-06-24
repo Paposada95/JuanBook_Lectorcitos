@@ -1,0 +1,27 @@
+{
+  "name": "desafio-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "bootstrap": "^4.5.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paposada95/JuanBook_Lectorcitos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Paposada95/JuanBook_Lectorcitos/issues"
+  },
+  "homepage": "https://github.com/Paposada95/JuanBook_Lectorcitos#readme",
+  "description": ""
+}
