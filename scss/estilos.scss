@@ -452,10 +452,58 @@ section {
 //Media Queries
 @media (max-width: 575.98px) { 
     .container{
-        display: none;
+        width: 100%;
     }
-    body{
-        display: none;
+    header{
+        img.logo{
+            width: 100%;
+            padding: 0px;
+        }
+        .navbar{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .navbar-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        button.navbar-toggler {
+            padding: 0.25rem 0.75rem;
+            font-size: 1.25rem;
+            line-height: 1;
+            background-color: transparent;
+            border: 1px solid transparent;
+            color: white;
+            border-radius: 0.25rem;
+        }
+        a.nav-link{
+            font-size: 8px;
+            padding: 3px;
+            margin-top: 14px;
+        }
+    }
+    div.element-style{
+        img.booky{
+            max-width: 250px;
+            float: none;
+        }
+        h1{
+            font-size: 1rem;
+            text-align: center;
+        }
+        p{
+            font-size: 6px;
+        }
+    }
+    section.second{
+        padding: 12px;
+        h2{
+            font-size: 20px
+        }
+        .form{
+            width: 150px;
+        }
     }
 }
 // Small devices (landscape phones, 576px and up)
