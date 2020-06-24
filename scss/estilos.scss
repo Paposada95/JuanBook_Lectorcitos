@@ -293,6 +293,7 @@ footer {
     font-family: nunito;
     text-align: center;
     margin: 0px;
+    padding: 6px;
     @include backgroundFooterYHeader();
 
     p {
@@ -447,18 +448,3 @@ section {
         }
     }
 }
-//libros
-/*section.libros {
-    article {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 24px;
-
-        div.card {
-            display: flex;
-            width: 580px;
-            height: auto;
-        }
-    }
-}*/
