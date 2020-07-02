@@ -2,7 +2,7 @@
 $ownner:#f3c623;
 
 $colors: (
-    blue: #142850,
+    back: #142850,
     heaven: #00909e,
     body: #DAE1E7,
     aqua: #8EC6C5,
@@ -19,7 +19,7 @@ $colors: (
     background-color: $color;
 
 }
-@mixin backgroundFooterYHeader ($color: #6886c5) {   
+@mixin backgroundFooterYHeader ($color: #6886c5) {
     background-color: $color;
 
 }
@@ -97,6 +97,8 @@ $colors: (
     }
 }
 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 @each $name, $color in $colors {
     .btn-#{$name} {
         background-color: $color;
@@ -160,7 +162,7 @@ header {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        @include backgroundFooterYHeader();
+        @include backgroundFooterYHeader($color);
         
         nav {
             display: flex;
@@ -191,22 +193,14 @@ header {
                 justify-content: space-between;
 
             }
-        }
-        
-        div.dropdown-menu {
-            a {
-                color: black;
-                text-transform: uppercase;
-            }
-        }
-        
+        }  
     }
 }
 div.element-style {
     display: inline;
 
     img.booky {
-        width: 576px;
+        width: 456px;
         height: auto;
         object-fit: cover;
         float: right;
@@ -214,7 +208,7 @@ div.element-style {
 
     h1.main {
         font-family: nunito;
-        font-size: 4.2rem;
+        font-size: 4rem;
         color: #00909E;
         padding: 15px;
         margin-top: 28px;
@@ -228,7 +222,7 @@ div.element-style {
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 }
 section.second {
@@ -613,4 +607,3 @@ section {
         padding: 10px;
     }
 }
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
