@@ -7781,24 +7781,18 @@ section div.article-layout {
 
 @media (max-width: 575.98px) {
   .container {
-    display: none; }
-  body {
-    display: none; } }
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .container {
     width: 100%; }
-  .logo {
+  header img.logo {
     width: 100%;
     padding: 0px; }
-  .navbar {
+  header .navbar {
     display: flex;
     flex-wrap: nowrap; }
-  .navbar-nav {
+  header .navbar-nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end; }
-  button.navbar-toggler {
+  header button.navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1;
@@ -7806,27 +7800,64 @@ section div.article-layout {
     border: 1px solid transparent;
     color: white;
     border-radius: 0.25rem; }
-  a.nav-link {
+  header a.nav-link {
     font-size: 8px;
     padding: 3px;
     margin-top: 14px; }
-  p {
-    font-size: 10px; }
-  h1.principal {
+  div.element-style img.booky {
+    max-width: 250px;
+    float: none; }
+  div.element-style h1 {
+    font-size: 1rem;
+    text-align: center; }
+  div.element-style p {
+    font-size: 6px; }
+  section.second {
+    padding: 12px; }
+    section.second h2 {
+      font-size: 20px; }
+    section.second .form {
+      width: 150px; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 100%; }
+  header img.logo {
+    width: 100%;
+    padding: 0px; }
+  header .navbar {
+    display: flex;
+    flex-wrap: nowrap; }
+  header .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+  header button.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 0.25rem; }
+  header a.nav-link {
+    font-size: 8px;
+    padding: 3px;
+    margin-top: 14px; }
+  div.element-style img.booky {
+    max-width: 450px;
+    float: none; }
+  div.element-style h1 {
     font-size: 2rem;
     text-align: center; }
-  img.booky {
-    width: 350px;
-    float: none; }
-  .second {
+  div.element-style p {
+    font-size: 10px; }
+  section.second {
     padding: 12px; }
-  h2.suscribe {
-    font-size: 30px; }
-  .formulario {
-    width: 250px; }
-  button {
-    width: 80px;
-    padding: 10px; } }
+    section.second h2 {
+      font-size: 30px; }
+    section.second .form {
+      width: 250px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .container {

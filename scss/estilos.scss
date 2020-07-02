@@ -15,23 +15,23 @@ $colors: (
     margin: 6px;
     width: 62px;
 }
-@mixin backgroundBody ($color:#DAE1E7) {  
+@mixin backgroundBody ($color:#f9f9f9) {  
     background-color: $color;
 
 }
-@mixin backgroundFooterYHeader ($color: #142850) {   
+@mixin backgroundFooterYHeader ($color: #6886c5) {   
     background-color: $color;
 
 }
-@mixin backgroundSection($color:#00909e) {
+@mixin backgroundSection($color:#ffacb7) {
     background-color: $color;
 }
-@mixin backgroundCreadores($color:#8EC6C5) {
+@mixin backgroundCreadores($color:#ffe0ac) {
     background-color: $color;
     margin-top: 176px;
     padding-bottom: 480px;
 }
-@mixin estefaniaMorales ($color: #3797a4){
+@mixin estefaniaMorales ($color: #ffe8df){
     background-color: $color;
     width: 50%;
     float:left;
@@ -63,7 +63,7 @@ $colors: (
         }
     }
 }
-@mixin alejandraPosada ($color: #3797a4){
+@mixin alejandraPosada ($color: #ffe8df){
     background-color: $color;
     width: 50%;
     float:right;
@@ -96,8 +96,6 @@ $colors: (
         
     }
 }
-
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @each $name, $color in $colors {
     .btn-#{$name} {
@@ -615,3 +613,4 @@ section {
         padding: 10px;
     }
 }
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
