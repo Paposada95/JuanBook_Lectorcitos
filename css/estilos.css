@@ -24,8 +24,8 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --blue: #142850;
-  --heaven: #00909e;
+  --back: #e36387;
+  --heaven: #a6dcef;
   --body: #DAE1E7;
   --aqua: #8EC6C5;
   --toas: #32e0c4;
@@ -7421,8 +7421,8 @@ a.text-dark:hover, a.text-dark:focus {
     animation-play-state: paused;
     color: black; }
 
-.btn-blue {
-  background-color: #142850;
+.btn-back {
+  background-color: #e36387;
   text-transform: uppercase;
   border: none;
   padding: 16px 32px;
@@ -7433,14 +7433,14 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 14px;
   font-weight: bolder;
   transition: 250ms ease; }
-  .btn-blue:hover {
+  .btn-back:hover {
     transform: scale(1.1);
-    background-color: #2851a2;
+    background-color: #f3b9ca;
     animation-play-state: paused;
     color: black; }
 
 .btn-heaven {
-  background-color: #00909e;
+  background-color: #a6dcef;
   text-transform: uppercase;
   border: none;
   padding: 16px 32px;
@@ -7453,7 +7453,7 @@ a.text-dark:hover, a.text-dark:focus {
   transition: 250ms ease; }
   .btn-heaven:hover {
     transform: scale(1.1);
-    background-color: #05e9ff;
+    background-color: #fcfeff;
     animation-play-state: paused;
     color: black; }
 
@@ -7517,7 +7517,7 @@ body {
   color: #0C0E11;
   font-size: 16px;
   font-family: nunito;
-  background-color: #DAE1E7; }
+  background-color: #f9f9f9; }
 
 button i {
   color: white; }
@@ -7526,7 +7526,7 @@ header div.wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #142850; }
+  background-color: #e36387; }
   header div.wrapper nav {
     display: flex;
     color: white;
@@ -7547,20 +7547,17 @@ header div.wrapper {
       color: white;
       font-size: 1rem;
       justify-content: space-between; }
-  header div.wrapper div.dropdown-menu a {
-    color: black;
-    text-transform: uppercase; }
 
 div.element-style {
   display: inline; }
   div.element-style img.booky {
-    width: 576px;
+    width: 456px;
     height: auto;
     object-fit: cover;
     float: right; }
   div.element-style h1.main {
     font-family: nunito;
-    font-size: 4.2rem;
+    font-size: 4rem;
     color: #00909E;
     padding: 15px;
     margin-top: 28px;
@@ -7570,7 +7567,7 @@ div.element-style {
       margin-bottom: 8px;
       margin-top: 0; }
   div.element-style p {
-    font-size: 1.5rem; }
+    font-size: 1.7rem; }
 
 section.second {
   display: flex;
@@ -7579,7 +7576,7 @@ section.second {
   margin: 0px;
   margin-top: 20px;
   margin-bottom: 12px;
-  background-color: #00909e; }
+  background-color: #a6dcef; }
   section.second div.form {
     color: white;
     margin: 0 auto;
@@ -7623,7 +7620,7 @@ footer {
   text-align: center;
   margin: 0px;
   padding: 6px;
-  background-color: #142850; }
+  background-color: #e36387; }
   footer p {
     color: white;
     font-size: 1rem;
@@ -7656,7 +7653,7 @@ section.contacts {
   padding: 2rem;
   border-radius: 20%;
   margin: 1rem 20rem 2rem 20rem;
-  background-color: #00909e; }
+  background-color: #a6dcef; }
   section.contacts form {
     font-family: nunito;
     font-size: 20px;
@@ -7680,7 +7677,7 @@ section.contacts {
         width: 417px;
         height: 59px;
         border-radius: 2%;
-        background-color: #142850; }
+        background-color: #e36387; }
   section.contacts select {
     font-family: montserrat; }
   section.contacts div#condition {
@@ -7697,7 +7694,7 @@ main div.lector p {
   text-align: justify; }
 
 section.creadores {
-  background-color: #8EC6C5;
+  background-color: #ffe0ac;
   margin-top: 176px;
   padding-bottom: 480px; }
   section.creadores h2 {
@@ -7707,7 +7704,7 @@ section.creadores {
     margin: 32px;
     color: #00909E; }
   section.creadores div.estefania {
-    background-color: #3797a4;
+    background-color: #ffe8df;
     width: 50%;
     float: left; }
     section.creadores div.estefania h6 {
@@ -7731,7 +7728,7 @@ section.creadores {
       margin: 6px;
       width: 62px; }
   section.creadores div.alejandra {
-    background-color: #3797a4;
+    background-color: #ffe8df;
     width: 50%;
     float: right; }
     section.creadores div.alejandra h6 {
