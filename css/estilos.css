@@ -7646,6 +7646,19 @@ h1.main {
   line-height: 4.5rem;
   text-align: center; }
 
+textarea {
+  background-color: #a6dcef;
+  width: 417px;
+  height: 59px;
+  border-radius: 2%;
+  border-color: #a6dcef;
+  border-bottom: 1px solid #142850; }
+  textarea::placeholder {
+    color: white; }
+  textarea:hover {
+    background-color: #7bcbe7;
+    color: #fff; }
+
 section.contacts {
   display: flex;
   justify-content: center;
@@ -7653,9 +7666,9 @@ section.contacts {
   border-radius: 20%;
   margin: 1rem 20rem 2rem 20rem;
   background-color: #a6dcef; }
-  section.contacts form {
+  section.contacts form.contactos {
     font-family: nunito;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bolder;
     margin: 15px 12px;
     width: 400px;
@@ -7663,24 +7676,29 @@ section.contacts {
     margin-bottom: 20px;
     justify-content: center;
     align-items: center; }
-    section.contacts form input.contact {
+    section.contacts form.contactos div label {
+      text-transform: uppercase;
+      margin: auto; }
+    section.contacts form.contactos div input.contact {
       width: 100%;
       padding: 15px 0px;
       font-family: montserrat;
       background-color: transparent;
       border: 0;
       border-bottom: 1px solid #142850; }
-      section.contacts form input.contact::placeholder {
+      section.contacts form.contactos div input.contact::placeholder {
         color: white; }
-      section.contacts form input.contact div.comments textarea {
-        width: 417px;
-        height: 59px;
-        border-radius: 2%;
-        background-color: #e36387; }
-  section.contacts select {
-    font-family: montserrat; }
-  section.contacts div#condition {
-    width: 14px; }
+      section.contacts form.contactos div input.contact:hover {
+        background-color: #7bcbe7;
+        color: #fff; }
+    section.contacts form.contactos select {
+      font-family: montserrat;
+      background-color: #a6dcef; }
+      section.contacts form.contactos select:hover {
+        background-color: #7bcbe7;
+        color: #fff; }
+    section.contacts form.contactos div#condition {
+      width: 14px; }
 
 main div img.lector {
   width: 315px;
@@ -7749,55 +7767,33 @@ section.creadores {
       margin: 6px;
       width: 35px; }
 
-section div.article-layout {
-  display: grid;
-  grid-template-columns: minmax(400px, auto) 1fr 1fr;
-  grid-auto-rows: auto;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  grid-gap: 10px;
-  justify-items: center;
-  padding: 20px; }
-  section div.article-layout div.box {
-    transition: 1s; }
-    section div.article-layout div.box:hover {
-      transform: scale(1.1);
-      background-color: #00909e;
-      border-radius: 30px; }
-    section div.article-layout div.box div.img-wrapper {
-      display: grid; }
-      section div.article-layout div.box div.img-wrapper img {
+section.gallery {
+  margin-bottom: 2rem; }
+  section.gallery div.article-layout {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-flow: dense; }
+    section.gallery div.article-layout div.img-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      section.gallery div.article-layout div.img-wrapper:hover {
+        transform: scale(1.08);
+        background-color: #f3b9ca;
+        border-radius: 30px; }
+      section.gallery div.article-layout div.img-wrapper img {
         height: auto;
-        width: 285px;
-        overflow: hidden;
-        margin: auto;
-        padding: 20px; }
-
-section.contact form.contactos {
-  font-family: nunito;
-  font-size: 15px;
-  font-weight: bolder;
-  color: #142850;
-  margin: 15px auto;
-  width: 400px;
-  margin-bottom: 20px; }
-  section.contact form.contactos div input.contact {
-    width: 100%;
-    padding: 15px 0px;
-    font-family: montserrat;
-    background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid #142850; }
-  section.contact form.contactos div textarea#comments {
-    font-family: montserrat;
-    background-color: #142850 !important;
-    width: 417px;
-    height: 59px;
-    border-radius: 2%;
-    overflow: auto;
-    z-index: 1; }
-  section.contact form.contactos div select {
-    font-family: montserrat; }
+        width: 285px; }
+    section.gallery div.article-layout .img-wrapper.featured {
+      grid-column: span 2;
+      grid-row: span 2; }
+    section.gallery div.article-layout .img-wrapper.extend {
+      grid-column: span 1;
+      grid-row: span 2; }
 
 @media (max-width: 575.98px) {
   .container {

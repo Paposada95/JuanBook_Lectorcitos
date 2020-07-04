@@ -318,6 +318,22 @@ h1.main {
     line-height: 4.5rem;
     text-align: center;
 }
+textarea{
+    background-color:#a6dcef ;
+    width: 417px;
+    height: 59px;
+    border-radius: 2%;
+    border-color: #a6dcef;
+    border-bottom: 1px solid #142850;
+    &::placeholder {
+        color: rgb(255, 255, 255);
+    }
+    &:hover {
+        background-color: darken($color: #a6dcef, $amount: 10);
+        color: #fff;
+    }
+}
+//contactos
 section.contacts {
     display: flex;
     justify-content: center;
@@ -325,47 +341,49 @@ section.contacts {
     border-radius: 20%;
     margin: 1rem 20rem 2rem 20rem;
     @include backgroundSection();
-
-    form {
+    form.contactos {
         font-family: nunito;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bolder;
         margin: 15px 12px;
         width: 400px;
-        color:#142850;
+        color: #142850;
         margin-bottom: 20px;
         justify-content: center;
         align-items: center;
-
-        input.contact {
-            width: 100%;
-            padding: 15px 0px;
-            font-family: montserrat;
-            background-color: transparent;
-            border: 0;
-            border-bottom: 1px solid #142850;
-            
-            &::placeholder {
-                color: rgb(255, 255, 255);
+        div {
+            label{
+                text-transform: uppercase;
+                margin: auto;
             }
+            input.contact {
+                width: 100%;
+                padding: 15px 0px;
+                font-family: montserrat;
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid #142850;
 
-        div.comments{
-            textarea {
-                width: 417px;
-                height: 59px;
-                border-radius: 2%;
-                @include backgroundFooterYHeader()
+                &::placeholder {
+                    color: rgb(255, 255, 255);
+                }
+                &:hover {
+                    background-color: darken($color: #a6dcef, $amount: 10);
+                    color: #fff;
+                }
             }
         }
-    }
-}
-
-    select {
-        font-family: montserrat;
-    }
-
-    div#condition {
-        width: 14px;
+        select {
+            font-family: montserrat;
+            background-color: #a6dcef;
+            &:hover {
+                background-color: darken($color: #a6dcef, $amount: 10);
+                color: #fff;
+            }
+        }
+        div#condition {
+            width: 14px;
+        }
     }
 }
 //Quienes Somos
@@ -404,78 +422,41 @@ section.creadores{
 
 }
 //galería
-section {
+section.gallery {
+    margin-bottom: 2rem;
     div.article-layout {
+        max-width: 1000px;
+        margin: auto;
         display: grid;
-        grid-template-columns: minmax(400px, auto) 1fr 1fr;
-        grid-auto-rows: auto;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        grid-gap: 10px;
-        justify-items: center;
-        padding: 20px;
-
-        div.box {
-            transition: 1s;
-
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        grid-auto-flow: dense;  
+        div.img-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             &:hover {
-                transform: scale(1.1);
-                background-color: #00909e;
+                transform: scale(1.08);
+                background-color:lighten($color: #e36387, $amount: 20);
                 border-radius: 30px;
             }
-
-            div.img-wrapper {
-                display: grid;
-
-                img {
-                    height: auto;
-                    width: 285px;
-                    overflow: hidden;
-                    margin: auto;
-                    padding: 20px;
-                }
+            img {
+                height: auto;
+                width: 285px;
             }
+        }
+        .img-wrapper.featured {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .img-wrapper.extend{
+            grid-column: span 1;
+            grid-row:span 2 ;
         }
     }
 }
-//contactos
-section.contact{
-    form.contactos{
-        font-family: nunito;
-        font-size: 15px;
-        font-weight: bolder;
-        color: #142850;
-        margin: 15px auto;
-        width: 400px;
-        margin-bottom: 20px;
-        div{
-            input.contact {
-                width: 100%;
-                padding: 15px 0px;
-                font-family: montserrat;
-                background-color: transparent;
-                border: 0;
-                border-bottom: 1px solid #142850;
-            }
-        }
-        div{
-            textarea#comments {
-                font-family: montserrat;
-                background-color: #142850 !important;
-                width: 417px;
-                height: 59px;
-                border-radius: 2%;
-                overflow: auto;
-                z-index: 1;
-            }
-        }
-        div{
-            select{
-                font-family: montserrat;
-            }
-        }
-    }
-}
+
 
 //Media Queries
 @media (max-width: 575.98px) { 
