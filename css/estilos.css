@@ -7795,19 +7795,198 @@ section.gallery {
       grid-column: span 1;
       grid-row: span 2; }
 
-@media (max-width: 575.98px) {
+@media (max-width: 320px) {
+  .container {
+    width: 100%; }
+  header {
+    display: inline; }
+    header .navbar-brand {
+      display: block;
+      margin: auto; }
+      header .navbar-brand img.logo {
+        width: 90%;
+        padding: 0px; }
+      header .navbar-brand a.nav-link {
+        font-size: 8px;
+        padding: 3px;
+        margin-top: 14px; }
+  div.element-style img.booky {
+    max-width: 240px;
+    float: none;
+    display: block;
+    margin: auto;
+    margin-top: 21px; }
+  div.element-style h1.main {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.3; }
+  div.element-style p {
+    font-size: 20px; }
+  section.second div.form h2 {
+    font-family: nunito;
+    font-size: 38px;
+    color: #fff;
+    margin: 5px; }
+  footer p {
+    color: white;
+    font-size: .8rem;
+    font-family: nunito;
+    text-align: center;
+    margin: 0px; }
+  footer ul {
+    display: inline;
+    list-style-type: none;
+    text-align: center; }
+    footer ul li {
+      display: inline;
+      text-align: center;
+      margin: 0 10px 0 0; }
+      footer ul li a img {
+        max-width: 28px; }
+  main h1.main {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 1px; }
+  main div img.lector {
+    width: 200px;
+    height: auto;
+    float: none;
+    display: block;
+    margin: auto; }
+  main div.row {
+    flex-wrap: wrap; }
+    main div.row .col {
+      flex: 0 0 100%; }
+    main div.row p {
+      font-size: 18px;
+      text-align: left; }
+  section.creadores {
+    padding-bottom: 23px; }
+    section.creadores h2 {
+      font-family: nunito;
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin: 32px;
+      color: #00909E;
+      text-align: center; }
+    section.creadores div.estefania {
+      width: 100%;
+      float: none; }
+      section.creadores div.estefania img {
+        width: 237px;
+        margin: 16px;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.estefania p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.estefania h3 {
+        text-align: center; }
+      section.creadores div.estefania ul {
+        display: inline;
+        list-style-type: none;
+        text-align: center;
+        padding: 72px; }
+        section.creadores div.estefania ul li {
+          display: inline;
+          text-align: center; }
+          section.creadores div.estefania ul li a img {
+            max-width: 28px; }
+    section.creadores div.alejandra {
+      width: 100%;
+      float: none; }
+      section.creadores div.alejandra img {
+        width: 237px;
+        margin: 16px;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.alejandra p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.alejandra h3 {
+        text-align: center; }
+      section.creadores div.alejandra ul {
+        display: inline;
+        list-style-type: none;
+        text-align: center;
+        padding: 72px; }
+        section.creadores div.alejandra ul li {
+          display: inline;
+          text-align: center; }
+          section.creadores div.alejandra ul li a img {
+            max-width: 28px; }
+  section.gallery {
+    margin-bottom: 2rem; }
+    section.gallery div.article-layout {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: 1fr;
+      grid-auto-flow: dense; }
+      section.gallery div.article-layout div.img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section.gallery div.article-layout div.img-wrapper:hover {
+          transform: scale(1.08);
+          background-color: #f3b9ca;
+          border-radius: 30px; }
+        section.gallery div.article-layout div.img-wrapper img {
+          height: auto;
+          width: 285px; }
+  section.contacts {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 20%;
+    margin: 1rem 20rem 2rem 20rem;
+    background-color: #a6dcef; }
+    section.contacts form.contactos {
+      font-family: nunito;
+      font-size: 15px;
+      font-weight: bolder;
+      margin: 15px 12px;
+      width: 400px;
+      color: #142850;
+      margin-bottom: 20px;
+      justify-content: center;
+      align-items: center; }
+      section.contacts form.contactos div label {
+        text-transform: uppercase;
+        margin: auto; }
+      section.contacts form.contactos div input.contact {
+        width: 100%;
+        padding: 15px 0px;
+        font-family: montserrat;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #142850; }
+        section.contacts form.contactos div input.contact::placeholder {
+          color: white; }
+        section.contacts form.contactos div input.contact:hover {
+          background-color: #7bcbe7;
+          color: #fff; }
+      section.contacts form.contactos select {
+        font-family: montserrat;
+        background-color: #a6dcef; }
+        section.contacts form.contactos select:hover {
+          background-color: #7bcbe7;
+          color: #fff; }
+      section.contacts form.contactos div#condition {
+        width: 14px; } }
+
+@media (min-width: 321px) and (max-width: 520px) {
   .container {
     width: 100%; }
   header img.logo {
     width: 100%;
     padding: 0px; }
-  header .navbar {
-    display: flex;
-    flex-wrap: nowrap; }
-  header .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
   header button.navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
@@ -7821,21 +8000,48 @@ section.gallery {
     padding: 3px;
     margin-top: 14px; }
   div.element-style img.booky {
-    max-width: 250px;
-    float: none; }
-  div.element-style h1 {
-    font-size: 1rem;
-    text-align: center; }
+    max-width: 280px;
+    float: none;
+    display: block;
+    margin: auto;
+    margin-top: 21px; }
+  div.element-style h1.main {
+    font-size: 3.2rem;
+    text-align: center;
+    line-height: 1.2; }
   div.element-style p {
-    font-size: 6px; }
-  section.second {
-    padding: 12px; }
-    section.second h2 {
-      font-size: 20px; }
-    section.second .form {
-      width: 150px; } }
+    font-size: 20px; }
+  section.second div.form {
+    color: white;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    font-family: nunito;
+    font-size: 35px;
+    text-align: center; }
+    section.second div.form h2 {
+      font-family: nunito;
+      font-size: 47px;
+      color: #fff;
+      margin: 5px; }
+  footer p {
+    color: white;
+    font-size: .8rem;
+    font-family: nunito;
+    text-align: center;
+    margin: 0px; }
+  footer ul {
+    display: inline;
+    list-style-type: none;
+    text-align: center; }
+    footer ul li {
+      display: inline;
+      text-align: center;
+      margin: 0 10px 0 0; }
+      footer ul li a img {
+        max-width: 28px; } }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 521px) and (max-width: 767.98px) {
   .container {
     width: 100%; }
   header img.logo {
