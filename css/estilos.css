@@ -7185,13 +7185,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: bolder;
   transition: 250ms ease;
   border: none;
-  padding: 16px 32px;
+  padding: 14px 30px;
   text-decoration: none;
   margin: 10px auto;
   cursor: pointer;
   color: white;
   font-family: montserrat;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bolder;
   transition: 250ms ease; }
   .btn-blue:hover {
@@ -7740,9 +7740,13 @@ section.creadores {
     section.creadores div.estefania h3 {
       color: #f40552;
       padding-left: 20px; }
-    section.creadores div.estefania nav.follow img {
-      margin: 6px;
-      width: 35px; }
+    section.creadores div.estefania ul.followUs {
+      display: flex;
+      list-style: none;
+      padding-left: 19px; }
+      section.creadores div.estefania ul.followUs img {
+        margin: 6px;
+        width: 35px; }
   section.creadores div.alejandra {
     background-color: #ffe8df;
     width: 50%;
@@ -7762,10 +7766,15 @@ section.creadores {
       border-radius: 20%; }
     section.creadores div.alejandra h3 {
       color: #f40552;
-      padding-left: 20px; }
-    section.creadores div.alejandra nav.follow img {
-      margin: 6px;
-      width: 35px; }
+      padding-right: 191px;
+      padding-left: 10px; }
+    section.creadores div.alejandra ul.followUs {
+      display: flex;
+      list-style: none;
+      padding-left: 10px; }
+      section.creadores div.alejandra ul.followUs img {
+        margin: 6px;
+        width: 35px; }
 
 section.gallery {
   margin-bottom: 2rem; }
@@ -7886,6 +7895,194 @@ section.gallery {
       section.creadores div.estefania h3 {
         text-align: center; }
       section.creadores div.estefania ul {
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        margin-left: 92px; }
+        section.creadores div.estefania ul li {
+          display: block;
+          text-align: center; }
+          section.creadores div.estefania ul li a img {
+            max-width: 28px; }
+    section.creadores div.alejandra {
+      width: 100%;
+      float: none; }
+      section.creadores div.alejandra img {
+        width: 237px;
+        margin: 16px;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.alejandra p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.alejandra h3 {
+        text-align: center;
+        padding: 0px; }
+      section.creadores div.alejandra ul {
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        margin-left: 92px; }
+        section.creadores div.alejandra ul li {
+          display: block;
+          text-align: center; }
+          section.creadores div.alejandra ul li a img {
+            max-width: 28px; }
+  section.gallery {
+    margin-bottom: 2rem; }
+    section.gallery div.article-layout {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: 1fr;
+      grid-auto-flow: dense; }
+      section.gallery div.article-layout div.img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section.gallery div.article-layout div.img-wrapper:hover {
+          transform: scale(1.08);
+          background-color: #f3b9ca;
+          border-radius: 30px; }
+        section.gallery div.article-layout div.img-wrapper img {
+          height: auto;
+          width: 285px; }
+  main h1.main {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.3; }
+  main section.contacts {
+    display: block;
+    justify-content: center;
+    border-radius: 20%;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: #a6dcef; }
+    main section.contacts form.contactos {
+      font-family: nunito;
+      font-size: 13px;
+      font-weight: bolder;
+      margin: auto;
+      width: auto;
+      color: #142850;
+      margin-bottom: 20px;
+      justify-content: center;
+      align-items: center; }
+      main section.contacts form.contactos div textarea {
+        background-color: #a6dcef;
+        width: 237px;
+        height: 59px;
+        border-radius: 2%;
+        border-color: #a6dcef;
+        border-bottom: 1px solid #142850; }
+        main section.contacts form.contactos div textarea::placeholder {
+          color: white; }
+        main section.contacts form.contactos div textarea:hover {
+          background-color: #7bcbe7;
+          color: #fff; }
+      main section.contacts form.contactos div a.form-contact {
+        display: inline-flex;
+        width: 111px; }
+      main section.contacts form.contactos div.condiciones input {
+        display: inline; }
+      main section.contacts form.contactos div.condiciones label {
+        font-size: 12px;
+        display: inline; } }
+
+@media (min-width: 321px) and (max-width: 520px) {
+  .container {
+    width: 100%; }
+  header {
+    display: inline; }
+    header .navbar-brand {
+      display: block;
+      margin: auto; }
+      header .navbar-brand img.logo {
+        width: 90%;
+        padding: 0px; }
+      header .navbar-brand a.nav-link {
+        font-size: 8px;
+        padding: 3px;
+        margin-top: 14px; }
+  div.element-style img.booky {
+    max-width: 240px;
+    float: none;
+    display: block;
+    margin: auto;
+    margin-top: 21px; }
+  div.element-style h1.main {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.3; }
+  div.element-style p {
+    font-size: 20px; }
+  section.second div.form h2 {
+    font-family: nunito;
+    font-size: 38px;
+    color: #fff;
+    margin: 5px; }
+  footer p {
+    color: white;
+    font-size: .8rem;
+    font-family: nunito;
+    text-align: center;
+    margin: 0px; }
+  footer ul {
+    display: inline;
+    list-style-type: none;
+    text-align: center; }
+    footer ul li {
+      display: inline;
+      text-align: center;
+      margin: 0 10px 0 0; }
+      footer ul li a img {
+        max-width: 28px; }
+  main h1.main {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 1px; }
+  main div img.lector {
+    width: 200px;
+    height: auto;
+    float: none;
+    display: block;
+    margin: auto; }
+  main div.row {
+    flex-wrap: wrap; }
+    main div.row .col {
+      flex: 0 0 100%; }
+    main div.row p {
+      font-size: 18px;
+      text-align: left; }
+  section.creadores {
+    padding-bottom: 23px; }
+    section.creadores h2 {
+      font-family: nunito;
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin: 32px;
+      color: #00909E;
+      text-align: center; }
+    section.creadores div.estefania {
+      width: 100%;
+      float: none; }
+      section.creadores div.estefania img {
+        width: 237px;
+        margin: 16px;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.estefania p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.estefania h3 {
+        text-align: center; }
+      section.creadores div.estefania ul {
         display: inline;
         list-style-type: none;
         text-align: center;
@@ -7909,7 +8106,8 @@ section.gallery {
         text-align: center;
         margin-bottom: 2px; }
       section.creadores div.alejandra h3 {
-        text-align: center; }
+        text-align: center;
+        padding: 0px; }
       section.creadores div.alejandra ul {
         display: inline;
         list-style-type: none;
@@ -7940,65 +8138,60 @@ section.gallery {
         section.gallery div.article-layout div.img-wrapper img {
           height: auto;
           width: 285px; }
-  section.contacts {
+  main h1.main {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.3; }
+  main section.contacts {
     display: flex;
     justify-content: center;
-    padding: 2rem;
     border-radius: 20%;
-    margin: 1rem 20rem 2rem 20rem;
+    margin: auto;
+    margin-bottom: 15px;
     background-color: #a6dcef; }
-    section.contacts form.contactos {
+    main section.contacts form.contactos {
       font-family: nunito;
-      font-size: 15px;
+      font-size: 13px;
       font-weight: bolder;
-      margin: 15px 12px;
-      width: 400px;
+      margin: auto;
+      width: auto;
       color: #142850;
       margin-bottom: 20px;
       justify-content: center;
       align-items: center; }
-      section.contacts form.contactos div label {
-        text-transform: uppercase;
-        margin: auto; }
-      section.contacts form.contactos div input.contact {
-        width: 100%;
-        padding: 15px 0px;
-        font-family: montserrat;
-        background-color: transparent;
-        border: 0;
+      main section.contacts form.contactos div textarea {
+        background-color: #a6dcef;
+        width: 237px;
+        height: 59px;
+        border-radius: 2%;
+        border-color: #a6dcef;
         border-bottom: 1px solid #142850; }
-        section.contacts form.contactos div input.contact::placeholder {
+        main section.contacts form.contactos div textarea::placeholder {
           color: white; }
-        section.contacts form.contactos div input.contact:hover {
+        main section.contacts form.contactos div textarea:hover {
           background-color: #7bcbe7;
           color: #fff; }
-      section.contacts form.contactos select {
-        font-family: montserrat;
-        background-color: #a6dcef; }
-        section.contacts form.contactos select:hover {
-          background-color: #7bcbe7;
-          color: #fff; }
-      section.contacts form.contactos div#condition {
-        width: 14px; } }
+      main section.contacts form.contactos div a.form-contact {
+        display: inline-flex;
+        width: 111px; }
+      main section.contacts form.contactos div.condiciones input {
+        display: inline; }
+      main section.contacts form.contactos div.condiciones label {
+        font-size: 12px;
+        display: inline; } }
 
-@media (min-width: 321px) and (max-width: 520px) {
+@media (min-width: 521px) and (max-width: 767.98px) {
   .container {
     width: 100%; }
-  header img.logo {
-    width: 100%;
-    padding: 0px; }
-  header button.navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    color: white;
-    border-radius: 0.25rem; }
-  header a.nav-link {
-    font-size: 8px;
-    padding: 3px;
-    margin-top: 14px; }
+  header {
+    display: inline; }
+    header img.logo {
+      width: 100%;
+      padding: 0px; }
+    header a.nav-link {
+      font-size: 8px;
+      padding: 3px;
+      margin-top: 14px; }
   div.element-style img.booky {
     max-width: 280px;
     float: none;
@@ -8006,24 +8199,16 @@ section.gallery {
     margin: auto;
     margin-top: 21px; }
   div.element-style h1.main {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     text-align: center;
-    line-height: 1.2; }
+    line-height: 1.3; }
   div.element-style p {
     font-size: 20px; }
-  section.second div.form {
-    color: white;
-    margin: 0 auto;
-    width: 400px;
-    text-align: center;
+  section.second div.form h2 {
     font-family: nunito;
-    font-size: 35px;
-    text-align: center; }
-    section.second div.form h2 {
-      font-family: nunito;
-      font-size: 47px;
-      color: #fff;
-      margin: 5px; }
+    font-size: 38px;
+    color: #fff;
+    margin: 5px; }
   footer p {
     color: white;
     font-size: .8rem;
@@ -8039,83 +8224,741 @@ section.gallery {
       text-align: center;
       margin: 0 10px 0 0; }
       footer ul li a img {
-        max-width: 28px; } }
-
-@media (min-width: 521px) and (max-width: 767.98px) {
-  .container {
-    width: 100%; }
-  header img.logo {
-    width: 100%;
-    padding: 0px; }
-  header .navbar {
-    display: flex;
-    flex-wrap: nowrap; }
-  header .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
-  header button.navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    color: white;
-    border-radius: 0.25rem; }
-  header a.nav-link {
-    font-size: 8px;
-    padding: 3px;
-    margin-top: 14px; }
-  div.element-style img.booky {
-    max-width: 450px;
-    float: none; }
-  div.element-style h1 {
+        max-width: 28px; }
+  main h1.main {
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 1px; }
+  main div img.lector {
+    width: 250px;
+    height: auto;
+    float: none;
+    display: block;
+    margin: auto; }
+  main div.row {
+    flex-wrap: wrap; }
+    main div.row .col {
+      flex: 0 0 100%; }
+    main div.row p {
+      font-size: 18px;
+      text-align: left; }
+  section.creadores {
+    padding-bottom: 23px; }
+    section.creadores h2 {
+      font-family: nunito;
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin: 32px;
+      color: #00909E;
+      text-align: center; }
+    section.creadores div.estefania {
+      width: 100%;
+      float: none; }
+      section.creadores div.estefania img {
+        display: block;
+        width: 237px;
+        margin: auto;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.estefania p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.estefania h3 {
+        text-align: center; }
+      section.creadores div.estefania h6 {
+        display: block;
+        text-align: center;
+        margin-top: 15px; }
+      section.creadores div.estefania ul {
+        margin: 16px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 2px; }
+        section.creadores div.estefania ul li {
+          margin: 9px; }
+          section.creadores div.estefania ul li a img {
+            max-width: 28px; }
+    section.creadores div.alejandra {
+      width: 100%;
+      float: none; }
+      section.creadores div.alejandra img {
+        display: block;
+        width: 237px;
+        margin: auto;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.alejandra p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.alejandra h3 {
+        text-align: center;
+        padding: 0px; }
+      section.creadores div.alejandra h6 {
+        display: block;
+        text-align: center;
+        margin-top: 15px; }
+      section.creadores div.alejandra ul {
+        margin: 16px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 2px; }
+        section.creadores div.alejandra ul li {
+          margin: 9px; }
+          section.creadores div.alejandra ul li a img {
+            max-width: 28px; }
+  section.gallery {
+    margin-bottom: 2rem; }
+    section.gallery div.article-layout {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: 1fr;
+      grid-auto-flow: dense; }
+      section.gallery div.article-layout div.img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section.gallery div.article-layout div.img-wrapper:hover {
+          transform: scale(1.08);
+          background-color: #f3b9ca;
+          border-radius: 30px; }
+        section.gallery div.article-layout div.img-wrapper img {
+          height: auto;
+          width: 285px; }
+  main h1.main {
     font-size: 2rem;
-    text-align: center; }
-  div.element-style p {
-    font-size: 10px; }
-  section.second {
-    padding: 12px; }
-    section.second h2 {
-      font-size: 30px; }
-    section.second .form {
-      width: 250px; } }
+    text-align: center;
+    line-height: 1.3; }
+  main section.contacts {
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 55px;
+    background-color: #a6dcef; }
+    main section.contacts form.contactos {
+      font-family: nunito;
+      font-size: 13px;
+      font-weight: bolder;
+      margin: auto;
+      width: auto;
+      color: #142850;
+      margin-bottom: 20px;
+      justify-content: center;
+      align-items: center; }
+      main section.contacts form.contactos div textarea {
+        background-color: #a6dcef;
+        width: 417px;
+        height: 59px;
+        border-radius: 2%;
+        border-color: #a6dcef;
+        border-bottom: 1px solid #142850; }
+        main section.contacts form.contactos div textarea::placeholder {
+          color: white; }
+        main section.contacts form.contactos div textarea:hover {
+          background-color: #7bcbe7;
+          color: #fff; }
+      main section.contacts form.contactos div.botones {
+        display: flex;
+        justify-content: space-around; }
+      main section.contacts form.contactos div.condiciones input {
+        display: inline; }
+      main section.contacts form.contactos div.condiciones label {
+        font-size: 12px;
+        display: inline; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .container {
-    max-width: 100%; }
-  a.nav-link {
-    font-size: 12px;
-    padding: 8px; }
-  .navbar {
-    display: flex;
-    flex-wrap: nowrap; }
-  button.navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: transparent;
-    border: 1px solid transparent;
-    color: white;
-    border-radius: 0.25rem; }
-  .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
-  p {
-    font-size: 1rem; }
-  h1.principal {
+    width: 100%; }
+  header {
+    display: inline; }
+    header img.logo {
+      width: 100%;
+      padding: 0px; }
+    header a.nav-link {
+      font-size: 8px;
+      padding: 3px;
+      margin-top: 14px; }
+  div.element-style img.booky {
+    max-width: 390px;
+    float: right;
+    margin-top: 21px; }
+  div.element-style h1.main {
     font-size: 3rem;
-    text-align: left; }
-  div.element-style > img {
-    width: 264px;
+    text-align: center;
+    line-height: 1.1; }
+  div.element-style p {
+    font-size: 18px; }
+  section.second div.form h2 {
+    font-family: nunito;
+    font-size: 38px;
+    color: #fff;
+    margin: 5px; }
+  footer p {
+    color: white;
+    font-size: .8rem;
+    font-family: nunito;
+    text-align: center;
+    margin: 0px; }
+  footer ul {
+    display: inline;
+    list-style-type: none;
+    text-align: center; }
+    footer ul li {
+      display: inline;
+      text-align: center;
+      margin: 0 10px 0 0; }
+      footer ul li a img {
+        max-width: 28px; }
+  main h1.main {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 1px; }
+  main div img.lector {
+    width: 250px;
+    height: auto;
+    float: none;
+    display: block;
+    margin: auto; }
+  main div.row {
+    flex-wrap: wrap; }
+    main div.row .col {
+      flex: 0 0 100%; }
+    main div.row p {
+      font-size: 18px;
+      text-align: left; }
+  section.creadores {
+    padding-bottom: 23px; }
+    section.creadores h2 {
+      font-family: nunito;
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin: 32px;
+      color: #00909E;
+      text-align: center; }
+    section.creadores div.estefania {
+      width: 100%;
+      float: none; }
+      section.creadores div.estefania img {
+        display: block;
+        width: 237px;
+        margin: auto;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.estefania p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.estefania h3 {
+        text-align: center; }
+      section.creadores div.estefania h6 {
+        display: block;
+        text-align: center;
+        margin-top: 15px; }
+      section.creadores div.estefania ul {
+        margin: 16px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 2px; }
+        section.creadores div.estefania ul li {
+          margin: 9px; }
+          section.creadores div.estefania ul li a img {
+            max-width: 28px; }
+    section.creadores div.alejandra {
+      width: 100%;
+      float: none; }
+      section.creadores div.alejandra img {
+        display: block;
+        width: 237px;
+        margin: auto;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.alejandra p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.alejandra h3 {
+        text-align: center;
+        padding: 0px; }
+      section.creadores div.alejandra h6 {
+        display: block;
+        text-align: center;
+        margin-top: 15px; }
+      section.creadores div.alejandra ul {
+        margin: 16px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 2px; }
+        section.creadores div.alejandra ul li {
+          margin: 9px; }
+          section.creadores div.alejandra ul li a img {
+            max-width: 28px; }
+  section.gallery {
+    margin-bottom: 2rem; }
+    section.gallery div.article-layout {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 1fr;
+      grid-auto-flow: dense; }
+      section.gallery div.article-layout div.img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section.gallery div.article-layout div.img-wrapper:hover {
+          transform: scale(1.08);
+          background-color: #f3b9ca;
+          border-radius: 30px; }
+        section.gallery div.article-layout div.img-wrapper img {
+          height: auto;
+          width: 285px; }
+  main h1.main {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.3; }
+  main section.contacts {
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+    margin-bottom: 15px;
+    padding: 55px;
+    margin: 126px;
+    margin-top: 10px;
+    background-color: #a6dcef; }
+    main section.contacts form.contactos {
+      font-family: nunito;
+      font-size: 13px;
+      font-weight: bolder;
+      margin: 15px 12px;
+      width: 400px;
+      color: #142850;
+      margin-bottom: 20px;
+      justify-content: center;
+      align-items: center; }
+      main section.contacts form.contactos textarea {
+        background-color: #a6dcef;
+        height: 59px;
+        border-radius: 2%;
+        border-color: #a6dcef;
+        border-bottom: 1px solid #142850; }
+        main section.contacts form.contactos textarea::placeholder {
+          color: white; }
+        main section.contacts form.contactos textarea:hover {
+          background-color: #7bcbe7;
+          color: #fff; }
+      main section.contacts form.contactos div.botones {
+        display: flex;
+        justify-content: space-around; }
+      main section.contacts form.contactos div.condiciones input {
+        display: inline; }
+      main section.contacts form.contactos div.condiciones label {
+        font-size: 12px;
+        display: inline; } }
+
+@media (min-width: 992px) and (max-width: 1216px) {
+  .container {
+    width: 100%; }
+  header {
+    display: inline; }
+    header img.logo {
+      width: 100%;
+      padding: 0px; }
+    header a.nav-link {
+      font-size: 8px;
+      padding: 3px;
+      margin-top: 14px; }
+  div.element-style img.booky {
+    max-width: 489px;
     float: right; }
-  .second {
-    padding: 12px; }
-  h2.suscribe {
-    font-size: 29px !important; }
-  .formulario {
-    width: 250px; }
-  button {
-    width: 80px;
-    padding: 10px; } }
+  div.element-style h1.main {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.1; }
+  div.element-style p {
+    font-size: 25px; }
+  section.second div.form h2 {
+    font-family: nunito;
+    font-size: 3.8rem;
+    color: #fff;
+    margin: 5px; }
+  footer p {
+    color: white;
+    font-size: .8rem;
+    font-family: nunito;
+    text-align: center;
+    margin: 0px; }
+  footer ul {
+    display: inline;
+    list-style-type: none;
+    text-align: center; }
+    footer ul li {
+      display: inline;
+      text-align: center;
+      margin: 0 10px 0 0; }
+      footer ul li a img {
+        max-width: 28px; }
+  main {
+    margin-bottom: 50px; }
+    main h1.main {
+      font-size: 4rem;
+      text-align: center;
+      margin-top: 1px; }
+    main div img.lector {
+      width: 314px;
+      height: auto;
+      float: left; }
+    main div.row {
+      flex-wrap: wrap; }
+      main div.row .col {
+        flex: 0 0 100%; }
+      main div.row p {
+        font-size: 22px;
+        text-align: left; }
+  section.creadores {
+    padding-bottom: 23px; }
+    section.creadores h2 {
+      font-family: nunito;
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin: 32px;
+      color: #00909E;
+      text-align: center; }
+    section.creadores div.estefania {
+      width: 50%;
+      float: left; }
+      section.creadores div.estefania img {
+        display: block;
+        width: 237px;
+        margin: auto;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.estefania p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.estefania h3 {
+        text-align: center; }
+      section.creadores div.estefania h6 {
+        display: block;
+        text-align: center;
+        margin-top: 15px; }
+      section.creadores div.estefania ul {
+        margin: 16px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 2px; }
+        section.creadores div.estefania ul li {
+          margin: 9px; }
+          section.creadores div.estefania ul li a img {
+            max-width: 28px; }
+    section.creadores div.alejandra {
+      width: 50%;
+      float: right; }
+      section.creadores div.alejandra img {
+        display: block;
+        width: 222px;
+        margin: auto;
+        float: none;
+        border-radius: 100%; }
+      section.creadores div.alejandra p {
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 2px; }
+      section.creadores div.alejandra h3 {
+        text-align: center;
+        padding: 0px; }
+      section.creadores div.alejandra h6 {
+        display: block;
+        text-align: center;
+        margin-top: 15px; }
+      section.creadores div.alejandra ul {
+        margin: 16px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 2px; }
+        section.creadores div.alejandra ul li {
+          margin: 9px; }
+          section.creadores div.alejandra ul li a img {
+            max-width: 28px; }
+  section.gallery {
+    margin-bottom: 2rem; }
+    section.gallery div.article-layout {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 1fr;
+      grid-auto-flow: dense; }
+      section.gallery div.article-layout div.img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section.gallery div.article-layout div.img-wrapper:hover {
+          transform: scale(1.08);
+          background-color: #f3b9ca;
+          border-radius: 30px; }
+        section.gallery div.article-layout div.img-wrapper img {
+          height: auto;
+          width: 285px; }
+  main h1.main {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.3; }
+  main section.contacts {
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+    margin-bottom: 15px;
+    padding: 55px;
+    margin: 126px;
+    margin-top: 10px;
+    background-color: #a6dcef; }
+    main section.contacts form.contactos {
+      font-family: nunito;
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 15px 12px;
+      width: 550px;
+      color: #142850;
+      margin-bottom: 20px;
+      justify-content: center;
+      align-items: center; }
+      main section.contacts form.contactos textarea {
+        background-color: #a6dcef;
+        height: 77px;
+        width: 551px;
+        border-radius: 2%;
+        border-color: #a6dcef;
+        border-bottom: 1px solid #142850; }
+        main section.contacts form.contactos textarea::placeholder {
+          color: white; }
+        main section.contacts form.contactos textarea:hover {
+          background-color: #7bcbe7;
+          color: #fff; }
+      main section.contacts form.contactos div.condiciones input {
+        display: inline; }
+      main section.contacts form.contactos div.condiciones label {
+        font-size: 18px;
+        display: inline; } }
+
+@media (min-width: 1217px) and (max-width: 2100px) {
+  .container {
+    width: 100%; }
+  header {
+    display: inline; }
+    header img.logo {
+      width: 100%;
+      padding: 0px; }
+    header a.nav-link {
+      font-size: 8px;
+      padding: 3px;
+      margin-top: 14px; }
+  footer {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-family: nunito;
+    text-align: center;
+    margin: 0px;
+    padding: 6px;
+    background-color: #e36387; }
+    footer p {
+      color: white;
+      font-size: 1.2rem;
+      font-family: nunito;
+      text-align: center;
+      margin: 0px; }
+    footer ul {
+      display: inline;
+      list-style-type: none;
+      text-align: center; }
+      footer ul li {
+        display: inline;
+        text-align: center;
+        margin: 0 10px 0 0; }
+        footer ul li a img {
+          max-width: 54px; }
+  div.element-style img.booky {
+    max-width: 489px;
+    float: right; }
+  div.element-style h1.main {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.1; }
+  div.element-style p {
+    font-size: 25px; }
+  section.second div.form h2 {
+    font-family: nunito;
+    font-size: 3.8rem;
+    color: #fff;
+    margin: 5px; }
+  footer p {
+    color: white;
+    font-size: .8rem;
+    font-family: nunito;
+    text-align: center;
+    margin: 0px; }
+  footer ul {
+    display: inline;
+    list-style-type: none;
+    text-align: center; }
+    footer ul li {
+      display: inline;
+      text-align: center;
+      margin: 0 10px 0 0; }
+      footer ul li a img {
+        max-width: 28px; }
+  main div img.lector {
+    width: 315px;
+    height: auto;
+    object-fit: cover;
+    float: right; }
+  main div.row p {
+    font-size: 20px;
+    text-align: left; }
+  section.creadores {
+    background-color: #ffe0ac;
+    padding-bottom: 480px; }
+    section.creadores h2 {
+      font-family: nunito;
+      font-weight: bolder;
+      font-size: 3.5rem;
+      margin: 32px;
+      color: #00909E;
+      text-align: center; }
+    section.creadores div.estefania {
+      background-color: #ffe8df;
+      width: 50%;
+      float: left; }
+      section.creadores div.estefania h6 {
+        display: inline-block;
+        font-family: nunito;
+        font-size: 2rem;
+        margin: 13px;
+        color: #f40552; }
+      section.creadores div.estefania p {
+        color: #4d3e3e; }
+      section.creadores div.estefania img {
+        width: 284px;
+        margin: 16px;
+        float: left;
+        border-radius: 20%; }
+      section.creadores div.estefania h3 {
+        color: #f40552;
+        padding-left: 20px; }
+      section.creadores div.estefania ul.followUs {
+        display: flex;
+        list-style: none;
+        padding-left: 19px; }
+        section.creadores div.estefania ul.followUs img {
+          margin: 6px;
+          width: 35px; }
+    section.creadores div.alejandra {
+      background-color: #ffe8df;
+      width: 50%;
+      float: right; }
+      section.creadores div.alejandra h6 {
+        display: inline-block;
+        font-family: nunito;
+        font-size: 2rem;
+        margin: 13px;
+        color: #f40552; }
+      section.creadores div.alejandra p {
+        color: #4d3e3e; }
+      section.creadores div.alejandra img {
+        width: 284px;
+        margin: 16px;
+        float: left;
+        border-radius: 20%; }
+      section.creadores div.alejandra h3 {
+        color: #f40552;
+        padding-right: 191px;
+        padding-left: 10px; }
+      section.creadores div.alejandra ul.followUs {
+        display: flex;
+        list-style: none;
+        padding-left: 10px; }
+        section.creadores div.alejandra ul.followUs img {
+          margin: 6px;
+          width: 35px; }
+  section.gallery {
+    margin-bottom: 2rem; }
+    section.gallery div.article-layout {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
+      grid-auto-flow: dense; }
+      section.gallery div.article-layout div.img-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section.gallery div.article-layout div.img-wrapper:hover {
+          transform: scale(1.08);
+          background-color: #f3b9ca;
+          border-radius: 30px; }
+        section.gallery div.article-layout div.img-wrapper img {
+          height: auto;
+          width: 285px; }
+  main h1.main {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 1.3; }
+  main section.contacts {
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+    margin-bottom: 15px;
+    padding: 55px;
+    margin: 126px;
+    margin-top: 10px;
+    background-color: #a6dcef; }
+    main section.contacts form.contactos {
+      font-family: nunito;
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 15px 12px;
+      width: 550px;
+      color: #142850;
+      margin-bottom: 20px;
+      justify-content: center;
+      align-items: center; }
+      main section.contacts form.contactos textarea {
+        background-color: #a6dcef;
+        height: 77px;
+        width: 551px;
+        border-radius: 2%;
+        border-color: #a6dcef;
+        border-bottom: 1px solid #142850; }
+        main section.contacts form.contactos textarea::placeholder {
+          color: white; }
+        main section.contacts form.contactos textarea:hover {
+          background-color: #7bcbe7;
+          color: #fff; }
+      main section.contacts form.contactos div.condiciones input {
+        display: inline; }
+      main section.contacts form.contactos div.condiciones label {
+        font-size: 18px;
+        display: inline; } }

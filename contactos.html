@@ -46,48 +46,52 @@
 			</nav>
 		</div>
 	</header>
-	<h1 class="main">Contactos</h1>
-	<section class="contacts wow animate__animated animate__zoomIn">
-		<form class="contactos" action="#" method="GET">
-			<div>
-				<label for="name">Nombre</label>
-				<input class="contact" id="name" required placeholder="Escriba su nombre aquí" type="text">
-			</div>
-			<br>
-			<div>
-				<label for="last-name">Apellido</label>
-				<input class="contact" id="last-name" required placeholder="Escriba aqui su apellido " type="text">
-			</div>
-			<br>
-			<div>
-				<label for="email">Email</label>
-				<input class="contact" id="email" required placeholder="correoelectronico@ejemplo.com" type="email">
-			</div>
-			<br>
-			<div>
-				<label for="comments">Comentarios</label>
-				<textarea id="comments" placeholder="Escriba aquí sus comentarios"></textarea>
-			</div>
-			<br>
-			<div>
-				<label for="ages">Seleccione un rango de edad</label>
-				<select name="" id="Ages">
-					<option selected disabled>Seleccione Una de la lista</option>
-					<option>0 a 1 año</option>
-					<option>1 a 3</option>
-					<option>3 a 6</option>
-				</select>
-			</div>
-			<br>
-			<button class="btn-blue" type="submit">Enviar</button>
-			<button class="btn-blue" type="reset">Limpiar</button>
-			<div>
-				<input value="Si" type="checkbox" id="condiciones" name="acepto" required>
-				<label for="condiciones">Acepta Terminos & Condiciones</label>
-				<a href="#">Ver las condiciones acá</a>
-			</div>
-		</form>
-	</section>
+	<main>
+		<h1 class="main">Contactos</h1>
+		<section class="contacts wow animate__animated animate__zoomIn">
+			<form class="contactos" action="#" method="GET">
+				<div>
+					<label for="name">Nombre</label>
+					<input class="contact" id="name" required placeholder="Escriba su nombre aquí" type="text">
+				</div>
+				<br>
+				<div>
+					<label for="last-name">Apellido</label>
+					<input class="contact" id="last-name" required placeholder="Escriba aqui su apellido " type="text">
+				</div>
+				<br>
+				<div>
+					<label for="email">Email</label>
+					<input class="contact" id="email" required placeholder="correoelectronico@ejemplo.com" type="email">
+				</div>
+				<br>
+				<div>
+					<label for="comments">Comentarios</label>
+					<textarea id="comments" placeholder="Escriba aquí sus comentarios"></textarea>
+				</div>
+				<br>
+				<div>
+					<label for="ages">Seleccione un rango de edad</label>
+					<select name="" id="Ages">
+						<option selected disabled>Seleccione Una de la lista</option>
+						<option>0 a 1 año</option>
+						<option>1 a 3</option>
+						<option>3 a 6</option>
+					</select>
+				</div>
+				<br>
+				<div class="botones">
+					<a class="form-contact"><button class="btn-blue" type="submit">Enviar</button></a>
+					<a class="form-contact"><button class="btn-blue" type="reset">Limpiar</button></a>
+				</div>
+				<div class="condiciones">
+					<input value="Si" type="checkbox" id="condiciones" name="acepto" required>
+					<label for="condiciones">Acepta Terminos & Condiciones</label>
+					<a href="#">Ver las condiciones acá</a>
+				</div>
+			</form>
+		</section>
+	</main>
 	<footer>
         <p class="copy">&copy; Copyright 2020 | JuanBook Lectorcitos</p>
         <ul class="redes">
